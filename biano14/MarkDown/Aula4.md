@@ -16,3 +16,7 @@ Nesta aula aprenderemos sobre versionamento.
     * `git commit -m "DESCRIÇÃO DO COMMIT"`     
 * codigo para dar push para o Github
     * `git push --set-upstream "repositorio" "branch"`
+* codigo para limpar seu login do git
+    `git config --unset-all user.name/user.email`
+* codigo para verificar a branch atual
+    `git branch`
