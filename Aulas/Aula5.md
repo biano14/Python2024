@@ -13,3 +13,5 @@
     * `git config --global user.email "nome-de-email"`
 * codigo para dar Merge
     * `git merge "nome-da-fonte"`
+
+    
