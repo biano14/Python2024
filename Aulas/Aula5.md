@@ -11,9 +11,11 @@
     * `git config --global user.name "nome-de-usuario"`
 * codigo para configurar email
     * `git config --global user.email "nome-de-email"`
-* codigo para dar Merge
+* codigo para dar merge
     * `git merge "nome-da-fonte"`
 * codigo para log em arvore
     * ` git log --graph`
 * codigo para log em arvore resumido
     * `git log --pretty=format:"%h %s" --graph`
+* codigo para criar conexao com o git
+    * `git remote add "nome-da-conexao" "url-git" "`
