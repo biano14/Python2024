@@ -13,3 +13,7 @@
     * `git config --global user.email "nome-de-email"`
 * codigo para dar merge
     * `git merge "nome-da-fonte"`
+* codigo para log em arvore
+    * ` git log --graph`
+* codigo para log em arvore resumido
+    * `git log --pretty=format:"%h %s" --graph`
