@@ -11,3 +11,4 @@
     * `git config --global user.name "nome-de-usuario"`
 * codigo para configurar email
     * `git config --global user.email "nome-de-email"`
+* TESTE DE MERGEEEEE
