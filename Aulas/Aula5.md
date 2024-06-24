@@ -17,7 +17,3 @@
     * ` git log --graph`
 * codigo para log em arvore resumido
     * `git log --pretty=format:"%h %s" --graph`
-* codigo para criar conexao com o git
-    * `git remote add "nome-da-conexao" "url-git"`
-* codigo para push no github
-    * `git push -u "nome-da-conexao"`

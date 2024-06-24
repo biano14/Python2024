@@ -23,7 +23,7 @@
     * Aplicações
     * Hardware
 ---
-![Arquitetura de OS](./arquitetura-linux.png)
+![Arquitetura de OS](./img/arquitetura-linux.png)
 ---
 
 ### Explicações sobre MarkDown
