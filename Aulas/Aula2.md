@@ -28,7 +28,7 @@
 ---
 <center>
 
-## ![Arquitetura de OS](https://github.com/biano14/Python2024/blob/desenvolvimento/img/arquitetura-linux.png)
+![Arquitetura de OS](https://github.com/biano14/Python2024/blob/desenvolvimento/img/arquitetura-linux.png)
 
 </center>
 
