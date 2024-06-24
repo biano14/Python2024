@@ -15,4 +15,4 @@ Archives and Project of my Senai Python course
 | 3   |          Introdução a MarkDown           | [clique aqui](https://github.com/biano14/Python2024/blob/main/Aulas/Aula3.md) |
 | 4   |             Introdução a Git             | [clique aqui](https://github.com/biano14/Python2024/blob/main/Aulas/Aula4.md) |
 | 5   | Continuação de Git e Introdução a GitHub | [clique aqui](https://github.com/biano14/Python2024/blob/main/Aulas/Aula5.md) |
-| 6   |         Documentando Repositorio         | [clique aqui](https://github.com/biano14/Python2024/blob/main/Aulas/Aula1.md) |
+| 6   |         Documentando Repositorio         | [clique aqui](https://github.com/biano14/Python2024/blob/main/Aulas/aula6.md) |
