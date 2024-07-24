@@ -2,7 +2,7 @@
 
 Course of python
 
-Start: 17/06/2024
+Start: 17/06/2024 (Pause unti 22/06 and re-started)
 
 End: 26/08/2024
 
