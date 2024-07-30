@@ -19,6 +19,8 @@ Archives and Project of my Senai Python course
 | 6   |         Documentando Repositorio         | [clique aqui](https://github.com/biano14/Python2024/blob/main/Aulas/aula6.md) |
 
 ## Class of Senai Sig (After transfer the class)
+| #   |                 Assunto                  |                                                                          Link |
+| --- | :--------------------------------------: | ----------------------------------------------------------------------------: |
 | 1   |          Apresentação do curso           | [clique aqui]
 | 2   |      Aula sobre preparação do ambiente   | [clique aqui]
 | 1   |          Apresentação do curso           | [clique aqui]
