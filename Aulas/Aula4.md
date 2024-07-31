@@ -24,3 +24,5 @@ Nesta aula aprenderemos sobre versionamento.
   `git config --unset-all user.name/user.email`
 - codigo para verificar a branch atual
   `git branch`
+- codigo para remover ultimo commit
+  `git reset HEAD ~1`
