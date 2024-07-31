@@ -20,7 +20,7 @@ while True:
         print(f"Olá {nome} , seu IMC é {str(imc)} , seu diagnóstico é: Obesidade grau II")
     elif imc >40:
         print(f"Olá {nome} , seu IMC é {str(imc)} , seu diagnóstico é: Obesidade grau III")
-    continuar = input('Deseja continuar? (s/n)').lower()
+    continuar = input('Deseja fazer novo calculo? (s/n)').lower()
     if continuar == 's' :
         continue
     else:
