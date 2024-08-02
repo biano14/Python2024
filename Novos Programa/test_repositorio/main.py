@@ -1,7 +1,7 @@
-from datetime import date
+import datetime
 
 print('Test de reporito GIt e Github')
-data = datetime.datetime(2018, 6, 1)
+data = datetime.datetime.now()
 
 
 print(f'{data.strftime("%c")}')
