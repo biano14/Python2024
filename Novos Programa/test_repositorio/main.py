@@ -1,5 +1,9 @@
-print('Test de reporito GIt e Github')
+from datetime import date
 
-print(texto)
+print('Test de reporito GIt e Github')
+data = datetime.datetime(2018, 6, 1)
+
+
+print(f'{data.strftime("%c")}')
 
 
