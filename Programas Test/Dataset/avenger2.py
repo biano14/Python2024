@@ -1,8 +1,9 @@
 import pandas as pd
 
 # Caminho absoluto para o arquivo CSV
-file_path = 'C:/Users/Aluno Manhã/Desktop/Importa git/Python2024/Programas Test/Dataset/avengers.csv'
+file_path = 'C:/Users/Aluno Manhã/Pasta para importar repositorio/python2024/Programas Test/Dataset/avengers.csv'
 
+# PARA ESSE CODIGO SEMPRE VAI SER NECESSARIO DEFINIR O FILE_PATCH
 # Detectar o codificador
 def detect_encoding(file_path):
     import chardet
