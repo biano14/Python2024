@@ -70,7 +70,3 @@ filesOrganizer = FilesOrganizer(mainPath)
 filesOrganizer.moveFiles()
 
 print('OK')
-
-
-# By: Lucas Emanuel. September 2019.
-# Github url: https://github.com/lucasemn1 
