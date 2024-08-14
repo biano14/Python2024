@@ -15,4 +15,8 @@
   - Polacode
   - Python Environment Manager
   - Python Resorce Monitor
+  - Pritter
+  - Gitlens
+  - code runner
+  - Github pull requests
   
