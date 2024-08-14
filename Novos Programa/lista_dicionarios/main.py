@@ -1,3 +1,5 @@
+import os
+
 # Lista de Dicionario
 chaves = ('Nome', 'Idade', 'Profissão')
 
@@ -25,8 +27,20 @@ for usuario in usuarios:
         print(f'{chave}: {usuario[chave]}')
     print(f'\n{'-'*10}\n')  
 
+usuario = {}
 # adicionar novo dicionario a lista
 
 for i in range(len(chaves)):
-    usuario[chave[i]] = input(f'Informe o/a {chave[i]}')
-usuario  
+    usuario[chaves[i]] = input(f'Informe o/a {chaves[i]}: ')
+
+usuarios.append(usuario)
+print('\nUsuário cadastrado com sucesso!')
+
+os.system('cls')
+
+print(f'\n{'='*10} LISTA DE USUARIOS {'='*10}\n')
+
+for usuario in usuarios:
+    for chave in chaves:
+        print(f'{chave}: {usuario[chave]}')
+    print(f'\n{'-'*10}\n')
