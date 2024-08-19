@@ -1,4 +1,4 @@
-while True:
+hile True:
 # entrada de dados
     nome = input('Informe seu nome: ')
     altura = float(input('Informe sua altura (em m): ').replace(',','.'))
