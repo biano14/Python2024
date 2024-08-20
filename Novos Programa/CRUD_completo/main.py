@@ -1,25 +1,19 @@
 import os
 
 # Definindo as chaves
-chaves = ('Nome Completo', 'Data de Nascimento', 'CPF','Telefone', 'Profissão', 'E-mail', 'Endereço')
+chaves = ('Nome Completo', 'Data de Nascimento', 'CPF', 'Telefone', 'Profissão', 'E-mail', 'Endereço')
 
 # Lista inicial de usuários
-usuarios = [
-    {
-        chaves[0]: 'Gustavo',
-        chaves[1]: '14/07/1997'
-    }
-]
+usuarios = []
 
 while True:
-    print(f'\n{10*'-'} Banco de Usuários {10*'-'}') 
+    print(f'\n{"-"*10} Banco de Usuários {"-"*10}')
     print('1 - Lista todos os usuários.')
     print('2 - Cadastra novo usuário.')
     print('3 - Pesquisa nome cadastrado.')
     print('4 - Alterar usuário cadastrado.')
     print('5 - Excluir usuário cadastrado.')
     print('6 - Sair do programa.')
-    
     opcao = input('Opção Desejada: ')
     
     match opcao:
@@ -51,7 +45,7 @@ while True:
             chave_procurada = chaves[int(escolha) - 1]
             informacao = input(f'Digite o/a {chave_procurada} que deseja pesquisar: ')
             
-            os.system('cls')  # Limpa a tela (funciona apenas em sistemas Windows)
+            os.system('cls' if os.name == 'nt' else 'clear')  # Limpa a tela
             
             contador = 0
             for usuario in usuarios:
@@ -60,10 +54,45 @@ while True:
 
             print(f'{informacao} foi encontrado {contador} vezes.')
         case '4':
-            for usuario in range(len(usuarios)):
-                print(f'{usuario + 1}° usuário: {usuarios[usuario]}')
+            for i, usuario in enumerate(usuarios):
+                print(f'{i + 1}° usuário: {usuario}')
+            try:
+                indice = int(input('Informe o índice do usuário a ser alterado: ')) - 1
+                if 0 <= indice < len(usuarios):
+                    print("1 - Nome Completo")
+                    print("2 - Data de Nascimento")
+                    print("3 - CPF")
+                    print("4 - Telefone")
+                    print("5 - Profissão")
+                    print("6 - E-mail")
+                    print("7 - Endereço")
+                    chave = int(input("Informe o número correspondente à chave que deseja alterar: ")) - 1
+                    if 0 <= chave < len(chaves):
+                        novo_valor = input(f'Informe o novo valor do campo {chaves[chave]}: ')
+                        usuarios[indice][chaves[chave]] = novo_valor
+                        print("Usuário alterado com sucesso.")
+                    else:
+                        print("Chave inválida!")
+                else:
+                    print("Índice de usuário inválido!")
+            except ValueError:
+                print('Entrada inválida! Informe números corretamente.')
+            except Exception as e:
+                print(f'Ocorreu um erro: {e}')
         case '5':
-            print('Funcionalidade ainda não implementada.')
+            for i, usuario in enumerate(usuarios):
+                print(f'{i + 1}° usuário: {usuario}')
+            try:
+                indice = int(input('Informe o índice do usuário que deseja deletar da lista: ')) - 1
+                if 0 <= indice < len(usuarios):
+                    del usuarios[indice]
+                    print('Usuário deletado com sucesso!')
+                else:
+                    print("Índice de usuário inválido!")
+            except ValueError:
+                print('Entrada inválida! Informe números corretamente.')
+            except Exception as e:
+                print(f'Ocorreu um erro: {e}')
         case '6':
             print('Saindo do programa.')
             break
