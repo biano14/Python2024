@@ -1,3 +1,9 @@
 {
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.showToolbar": "never",
+    "workbench.colorTheme": "Bearded Theme Oceanic Reversed",
+    "workbench.preferredDarkColorTheme": "Bearded Theme feat. WebDevCody"
 }
