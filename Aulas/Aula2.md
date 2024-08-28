@@ -28,7 +28,7 @@
 ---
 <center>
 
-![Arquitetura de OS](https://github.com/biano14/Python2024/blob/desenvolvimento/img/arquitetura-linux.png)
+![Arquitetura de OS](https://github.com/biano14/Python2024/blob/desenvolvimento/img/arquitetura-linux.png?raw=true)
 
 </center>
 
@@ -73,6 +73,9 @@ Isso é um paragráfo, nesta aula estamos aprendendo sobre _**MarkDown**_.
 |:-:|:-:|:-|
 |Gustavo|Aguas Claras| (61)99999999|
 ```
+|nome|endereço|telefone|
+|:-:|:-:|:-|
+|Gustavo|Aguas Claras| (61)99999999|
 
 - Para associar um link:
 
@@ -80,12 +83,14 @@ Isso é um paragráfo, nesta aula estamos aprendendo sobre _**MarkDown**_.
 [não clique aqui](https://www.google.com)
 ```
 
+[não clique aqui](https://www.google.com)
+
 - Para associar uma imagem:
 
-```
+```Markdown
 ![Imagem do bob sponja](https://www.portal27.com.br/wp-content/uploads/2014/03/bobesponja.jpg.webp)
 ```
-
+![Imagem do bob sponja](https://www.portal27.com.br/wp-content/uploads/2014/03/bobesponja.jpg.webp)
 - Para fazer uma linha de separação
 
 ```Markdown

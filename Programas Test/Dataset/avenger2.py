@@ -1,34 +1,33 @@
 import pandas as pd
+from IPython.display import display
+import chardet
 
 # Caminho absoluto para o arquivo CSV
-file_path = 'C:/Users/Aluno Manhã/Pasta para importar repositorio/python2024/Programas Test/Dataset/avengers.csv'
+file_path = r'C:\Users\Aluno Manhã\Desktop\biano14\python2024\Programas Test\Dataset\avengers.csv'
 
-# PARA ESSE CODIGO SEMPRE VAI SER NECESSARIO DEFINIR O FILE_PATCH
 # Detectar o codificador
 def detect_encoding(file_path):
-    import chardet
     with open(file_path, 'rb') as f:
         result = chardet.detect(f.read())
         return result['encoding']
 
-# Ler o arquivo CSV usando o codificador detectado
+# Detectar a codificação
 encoding = detect_encoding(file_path)
+print(f"Codificação detectada: {encoding}")
+
+# Tentar ler o arquivo CSV usando a codificação detectada
 try:
-    data = pd.read_csv(file_path, encoding=encoding)
-except FileNotFoundError:
-    print(f"Arquivo não encontrado: {file_path}")
-    exit()
-except pd.errors.ParserError as e:
-    print(f"Erro ao ler o arquivo CSV: {e}")
-    exit()
-
-# Verificar se a coluna 'Name/Alias' existe e definir como índice
-if 'Name/Alias' in data.columns:
-    data.set_index('Name/Alias', inplace=True)
-else:
-    print("Coluna 'Name/Alias' não encontrada.")
-    exit()
-
-# Exibir os 25 primeiros dados
-print("Os 25 primeiros dados do dataset com 'Name/Alias' como índice:")
-print(data.head(25))
+    tabela = pd.read_csv(file_path, encoding=encoding)
+    print(tabela.head(60))
+except:
+    print(f"Erro de decodificação com a codificação detectada ({encoding}): {e}")
+    # Tentar com codificações alternativas
+    alternative_encodings = ['ISO-8859-1', 'cp1252']
+    for enc in alternative_encodings:
+        try:
+            tabela = pd.read_csv(file_path, encoding=enc)
+            print(f"Arquivo lido com sucesso usando a codificação: {enc}")
+            display(tabela)
+            break
+        except:
+            print(f"Falha ao ler com a codificação: {enc}")
