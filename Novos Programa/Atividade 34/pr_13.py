@@ -16,8 +16,8 @@ time.sleep(5)  # Espera a página carregar
 
 # Navega para criar um novo repositório
 # Certifique-se de que as coordenadas estejam corretas para o botão de "+" ou "Novo repositório"
-for i in range(5):
+for i in range(4):
     auto.press('tab')
 time.sleep(2)  # Espera o navegador abrir
-auto.write('Python')
+auto.write('videoaulas sobre Python')
 auto.press('enter')

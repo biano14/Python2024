@@ -15,11 +15,15 @@ def verifica_idade(opcao):
                 print(f'{i + 1}° evento:{evento}')
                 print(f'\n{"-"*10}\n')
             escolha = int(input('Selecione o evento que deseja ir: '))
-            if escolha <= enumerate(eventos) and escolha:
+            if escolha <= len(eventos) and escolha > 0:
                 if idade < int(eventos[escolha - 1][chaves[1]]):
-                    print('Entrada Proibida escolha outro evento')
+                    print('Entrada Proibida. Escolha outro evento.')
                 else:
-                    print(f'Ingresso emitido em:{dia} de {meses[mes - 1]} de {ano}')
+                    print(f'Aqui está seu ingresso')
+                    print('\n')
+                    print(f'Nome: {nome}')
+                    print(f'{evento[escolha - 1]}')
+                    print(f'Ingresso emitido em: {dia} de {meses[mes - 1]} de {ano}')
                     break
             else:
                 print('Informe um evento valido')
