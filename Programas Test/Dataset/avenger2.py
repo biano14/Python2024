@@ -3,7 +3,7 @@ from IPython.display import display
 import chardet
 
 # Caminho absoluto para o arquivo CSV
-file_path = r'C:\Users\Aluno Manhã\Desktop\biano14\python2024\Programas Test\Dataset\avengers.csv'
+file_path = r'C:\Users\Aluno Noturno\Desktop\biano14\python2024\Programas Test\Dataset\avengers.csv'
 
 # Detectar o codificador
 def detect_encoding(file_path):
@@ -20,7 +20,7 @@ try:
     tabela = pd.read_csv(file_path, encoding=encoding)
     print(tabela.head(60))
 except:
-    print(f"Erro de decodificação com a codificação detectada ({encoding}): {e}")
+    print(f"Erro de decodificação com a codificação detectada ({encoding}):")
     # Tentar com codificações alternativas
     alternative_encodings = ['ISO-8859-1', 'cp1252']
     for enc in alternative_encodings:
