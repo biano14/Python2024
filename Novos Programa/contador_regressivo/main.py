@@ -4,7 +4,7 @@ import time
 # entrada de dados
 numero = int(input('Informe um número inteiro: '))
 
-print('\nContagem regressive: ')
+print('\nContagem regressiva: ')
 
 #saida de dados
 while numero >= 0:
