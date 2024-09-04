@@ -4,7 +4,7 @@ def mostrar_menu():
     print('1 - Calcular quadrilétero.')
     print('2 - Calcular triângulo.')
     print('3 - Calcular círculo.')
-    print('4')
+    print('4 - Calcular Trapezio.')
     print('5 - Sair do programa.')
     
 def calcular_quadrilatero(b ,h):
