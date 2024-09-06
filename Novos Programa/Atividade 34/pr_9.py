@@ -1,3 +1,4 @@
+import os
 from calendar import month
 from datetime import date
 chaves = ('Nome do evento','Classificação')
@@ -17,30 +18,32 @@ def verifica_idade(opcao):
             escolha = int(input('Selecione o evento que deseja ir: '))
             if escolha <= len(eventos) and escolha > 0:
                 if idade < int(eventos[escolha - 1][chaves[1]]):
+                    os.system('cls')
                     print('Entrada Proibida. Escolha outro evento.')
                 else:
+                    os.system('cls')
                     print(f'Aqui está seu ingresso')
-                    print('\n')
                     print(f'Nome: {nome}')
-                    print(f'{evento[escolha - 1]}')
+                    print(f'{eventos[escolha - 1]}')
                     print(f'Ingresso emitido em: {dia} de {meses[mes - 1]} de {ano}')
                     break
             else:
                 print('Informe um evento valido')
         except:
             print('Valor inválido inserido')
-
-while True:
-    evento = {}
-    for chave in chaves:
-        evento[chave] = input(f'Informe o/a {chave.lower()}: ')
-    eventos.append(evento)
-    print('\nEvento cadastrado com sucesso!')
-    opcao = input('Deseja cadastrar outro evento (s/n): ')
-    if opcao == 'n':
-        nome = input('Informe seu nome: ')
-        idade = int(input('Informe sua idade: '))
-        verifica_idade(opcao)
-        break
-    else:
-        continue
+if __name__ == "__main__":
+    while True:
+        evento = {}
+        for chave in chaves:
+            evento[chave] = input(f'Informe o/a {chave.lower()}: ')
+        eventos.append(evento)
+        print('\nEvento cadastrado com sucesso!')
+        opcao = input('Deseja cadastrar outro evento (s/n): ')
+        os.system('cls')
+        if opcao == 'n':
+            nome = input('Informe seu nome: ')
+            idade = int(input('Informe sua idade: '))
+            verifica_idade(opcao)
+            break
+        else:
+            continue
