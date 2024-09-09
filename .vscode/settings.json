@@ -4,6 +4,6 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.inlineSuggest.enabled": false,
     "editor.inlineSuggest.showToolbar": "never",
-    "workbench.colorTheme": "Default High Contrast Light",
+    "workbench.colorTheme": "Default High Contrast",
     "workbench.preferredDarkColorTheme": "Bearded Theme feat. WebDevCody"
 }
