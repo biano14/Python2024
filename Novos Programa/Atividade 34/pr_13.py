@@ -1,6 +1,7 @@
 # escolher diretorio comando: cxfreeze app.py --target-dir autoteste
-import pyautogui as auto
 import time
+import pyautogui as auto
+
 
 auto.PAUSE = 0.5
 
