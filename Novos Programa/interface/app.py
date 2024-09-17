@@ -6,7 +6,12 @@ if __name__ == "__main__":
     cpf = input("Digite o CPF: ")
     
     # Criando a conta corrente
-    cc = ContaCorrente(nome, cpf, '1010-1','10010-1', 0)
+    cc = ContaCorrente(nome, cpf, '1010-1','10010-1', 0.0)
+    print(f'Títular: {cc.nome}.')
+    print(f'CPF: {cc.cpf}.')
+    print(f'Agência: {cc.agencia}.')
+    print(f'Conta: {cc.conta}.')
+    print(f'Saldo: R$ {cc.consultar_saldo():.2f}')
     
     while True:
         print("\nMenu:")
