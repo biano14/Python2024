@@ -22,4 +22,3 @@ numeros = []
 
 divisor = int(input('Informe uma quantidade de números decimais de 0 a 10 que deseja calcular a média: '))
 calcular_media(divisor, numeros)
-
