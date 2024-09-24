@@ -3,6 +3,7 @@ from dataclasses import dataclass
 # Criar a classe pessoa
 @dataclass
 class Pessoa:
+    codigo: int
     nome: str
     cpf: str
     email: str
