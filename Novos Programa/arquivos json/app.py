@@ -35,5 +35,17 @@ if __name__ == '__main__':
                         print(f'\n{'-'*30}\n')
                 except Exception as e:
                     print(f'Não foi possível abrir o arquivo. {e}.')
+                finally:
+                    continue
+            case '2': 
+                abrir_arquivo = input('Informe o nome do arquivo que deseja abrir: ')
+                try:
+                    usuario = {}
+                    campos = ('nome','cpf','email','profissao')
+                    print(f'Arquivo aberto {abrir_arquivo}.json.\n')
+                except Exception as e:
+                    print(f'Não foi possível realizar a operação. {e}.')
+                finally:
+                    continue
             case '_':
                 print('Opção inválida.')

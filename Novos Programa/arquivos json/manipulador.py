@@ -27,6 +27,12 @@ class Manipulador:
         with open(f'{nome_arquivo}.json','r',encoding='utf-8') as f:
             dados = json.load(f)
         return dados   
+    def salvar_dados(self,usuarios,nome_arquivo):
+        try:
+            with open(f'{nome_arquivo}.json','w', encoding='utf-8') as f:
+                json.dump(usuarios, nome_arquivo)
+        except Exception as e:
+            return f'Não foi possível salvar os dados. {e}.'
         
     def __del__(self):
         return 'Manipulador destruido' 
