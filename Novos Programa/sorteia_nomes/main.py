@@ -3,7 +3,7 @@ import random
 nomes = []
 
 while True:
-    print('1 - Insirir nome na lista.')
+    print('1 - Inserir nome na lista.')
     print('2 - Sortear.')
     print('3 - Sair do programa.')
     
@@ -17,7 +17,7 @@ while True:
             continue
         case '2':
             nome_sorteado = random.randint(0,len(nomes))
-            print(f'Nome: {nome_sorteado}.')
+            print(f'Nome: {nomes[nome_sorteado - 1]}.')
             continue
         case '3':
             print('Progrma encerrado.')
