@@ -1,9 +1,16 @@
+'''
+Para gerar o executavel do app:
+pip install pyinstaller
+pip install pillow
+flet pack nome_arquivo.py --icon nome_icone.png
+
+'''
 import flet as ft
 
 def main(page: ft.Page):
     def acao(e):
-        peso_val = peso.value.replace(',', '.')
-        altura_val = altura.value.replace(',', '.')
+        peso_val = peso.value.replace(',', '.') # type: ignore
+        altura_val = altura.value.replace(',', '.') # type: ignore
         
         if peso_val.replace('.', '').isdigit() and altura_val.replace('.', '').isdigit():
             imc = float(peso_val) / (float(altura_val) ** 2)
