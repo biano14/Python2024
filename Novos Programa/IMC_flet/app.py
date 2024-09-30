@@ -29,7 +29,7 @@ def main(page: ft.Page):
             else:
                 verificacao = f', seu IMC é {imc:.2f}, seu diagnóstico é: Obesidade grau III'
         else:
-            verificacao = ", por favor, insira um peso e altura válidos."
+            verificacao = ", por favor, insira um peso e/ou altura válidos."
 
         result.value = f'{nome.value} {verificacao}'
         nome.value = ''
