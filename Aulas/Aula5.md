@@ -18,3 +18,12 @@
   - `git log --graph`
 - codigo para log em arvore resumido
   - `git log --pretty=format:"%h %s" --graph`
+
+### Atualizações para Git lfs (Arquivos Grandes)
+
+- codigo para a instalação do git lfs
+  - `git lfs install`
+- codigo para trackear extensões grandes
+  - `git lfs track "*.extension"`
+- codigo para add arquivo com configurações do git lfs
+  - `git add .gitattributes`
