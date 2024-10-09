@@ -103,7 +103,7 @@ def reconhecedor_eigenfaces(largura,altura):
     reconhecedor.read('classificadorEigen.yml')
     fonte = cv2.FONT_HERSHEY_COMPLEX_SMALL
     
-    camera = cv2.VideoCapture()
+    camera = cv2.VideoCapture(0)
     
     while True:
         conectado, imagem = camera.read()
